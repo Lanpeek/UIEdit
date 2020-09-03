@@ -46,9 +46,9 @@ namespace UIEdit.Controllers
 
         public void LoadLastState()
         {
-            if (Properties.Settings.Default.surfaceFilePath.Length > 0 && Directory.Exists(SurfacesPath))
+            if (Properties.Settings.Default.surfaceFilePath.Length > 0 && Directory.Exists(Properties.Settings.Default.surfaceFilePath))
                 SurfacesPath = Properties.Settings.Default.surfaceFilePath;
-            if (Properties.Settings.Default.interfaceFilePath.Length > 0 && Directory.Exists(InterfacesPath))
+            if (Properties.Settings.Default.interfaceFilePath.Length > 0 && Directory.Exists(Properties.Settings.Default.interfaceFilePath))
             {
                 InterfacesPath = Properties.Settings.Default.interfaceFilePath;
                 GenerateFileList();
